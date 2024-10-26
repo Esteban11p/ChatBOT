@@ -1,0 +1,218 @@
+/* De acá saque algunos colores en código rgba https://htmlcolorcodes.com/es/tabla-de-colores/tabla-de-colores-web-seguros/ */
+body {
+  font-family: "Arial", "sans-serif";
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 0px solid gray;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#chat-btn {
+  width: 160px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #5CC3AF;
+  border: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 100px;
+  display: flex;
+}
+
+.container {
+  display: inline-block;
+  width: 800px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 10px 5%;
+  padding: 10px;
+  height: auto;
+}
+
+.container h2 {
+  color: #0e0e3e;
+  font-size: 38px;
+}
+
+.container p {
+  font-size: 18px;
+  color: gray;
+}
+
+.animation-bot {
+  padding: 0%;
+  width: 15%;
+  height: 350px;
+}
+
+
+/*Codigo de Emmanuel*/
+
+.container-modal {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 78%;
+  position: absolute;
+  flex-direction: row;
+  top: 95px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.Assistant,
+.Response {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #d9e8e6;
+}
+
+
+.Assistant {
+  color: #0e0e3e;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9e8e6;
+  width: 60%;
+  height: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  font-family: Arial,sans-serif;
+}
+
+.Assistant h2 {
+  margin-bottom: 20px;
+}
+
+.UserInput {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 0px solid black;
+  font-size: 18px;
+}
+
+#user-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#send-btn {
+  width: 200px;
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #5CC3AF;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: #0056b3
+}
+
+.Response {
+  background-color: white;
+  color: #333;
+  text-align: left;
+  width: 90%;
+  height: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: Arial,sans-serif;
+}
+
+.Response ol{
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.Response ol li{
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+
+.Response h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.listFunctions {
+  font-size: 10px;
+  text-align: left;
+}
+
+.listFunctions ol, li, ul{
+  margin-bottom: 5px;
+}
+
+.boxCodeIcon{
+  position: relative;
+  top: 14%;
+  left: 20%;
+}
+
+.listResponse {
+  width: 400px;
+  min-height: 10px;
+  height: auto;
+  display: grid;
+  margin-left: 29%;
+  padding: 20px;
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 99px;
+}
+
+.exitBtn {
+  width: 100px;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  padding: 5px;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exitBtn img:hover{
+  width: 25px;
+  transition: 1s ease;
+}
