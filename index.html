@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRTUAL ASSISTANT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="#"><img src="gallery/programador.png" alt="" height="60px" style="margin: 10px 20px 30px 30px;"></a>
+  </header>
+
+  <div class="content">
+
+    <div class="container">
+      <h2>¡BIENVENIDO! <br> DISFRUTA DE TU EXPERIENCIA <br>EN COBA</h2>
+      <p>Nuestro chatbot es un asistente virtual automatizado que interactúa con los usuarios, <br> responde preguntas y
+        ofrece soporte de manera rápida y eficiente.</p>
+      <button id="chat-btn">EMPEZAR</button>
+    </div>
+
+    <div class="animation-bot">
+      <lottie-player src="https://lottie.host/2480ff6d-b458-4d43-8984-5b01a6d82db2/aPOdedTZp9.json"
+        background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay></lottie-player>
+    </div>
+
+  </div>
+
+  <div clas="container-modal">
+    <div class="modal">
+      <form class="Assistant">
+        <h2>¿En qué puedo ayudarte?</h2>
+        <input type="text" class="UserInput" id="userInput" placeholder="...">
+        <button id="send-btn" type="submit">Ejecutar </button>
+
+      </form>
+
+
+      <! Esta parte es de la sección de respuestas en el lado derecho --->
+
+
+        <div class="Response">
+          <h2>QUE QUIERES HACER</h2>
+          <!Lista de Funciones--->
+            <ol class="listFunctions" >
+              <li>Saludar</li>
+              <li>Hora</li>
+              <li>Fecha</li>
+              <li>Registarse</li>
+              <li>Ver Usuarios</li>
+              <li>Recomendar una pelicula</li>
+            </ol>
+            <br>
+
+            <img class="boxCodeIcon" src="gallery/boxCode.png" alt="" width="55px">
+            <ul class="listResponse"></ul>
+        </div>
+        <button id="exit-btn" class="exitBtn">
+          <img src="gallery/exit.png" width="20px" alt="">
+        </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
